@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cold Warden Privacy Policy</title>
+<meta name="description" content="What the Cold Warden Discord bot collects, why, where it is kept and who can see it.">
+<style>
+  :root {
+    --bg: #f7f7f5;
+    --fg: #1d1f21;
+    --muted: #5c6166;
+    --line: #dcdcd7;
+    --accent: #2f5d8a;
+    --card: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16181b;
+      --fg: #e6e6e3;
+      --muted: #9ba1a7;
+      --line: #2c3035;
+      --accent: #8fb6e0;
+      --card: #1d2024;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 48px 16px 64px;
+  }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 6px; }
+  h2 {
+    font-size: 1.15rem;
+    margin: 36px 0 10px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+  }
+  h3 { font-size: 1rem; margin: 20px 0 6px; }
+  p, li { color: var(--fg); }
+  ul { padding-left: 22px; }
+  li { margin: 4px 0; }
+  .meta { color: var(--muted); margin: 0 0 24px; }
+  .summary {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 4px 20px;
+  }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Cold Warden Privacy Policy</h1>
+  <p class="meta">Effective 18 October 2026</p>
+
+  <p>Cold Warden is a Discord bot run by the staff of Cold War, a Roblox game. It works only in the official Cold War community Discord server, where staff use it to manage game bans, handle player reports and review ban appeals. This policy explains what the bot collects, why, where it is kept and who can see it.</p>
+
+  <div class="summary">
+    <ul>
+      <li>The bot reads message content in one place only: a ban appeal channel, at the moment staff close it, to save a transcript for staff.</li>
+      <li>It does not read messages in any other channel, track your online status or collect the server's member list.</li>
+      <li>Your data is never sold, never used for advertising and never used to train machine learning or AI models.</li>
+    </ul>
+  </div>
+
+  <h2>1. What the bot collects</h2>
+
+  <h3>When you use the bot</h3>
+  <ul>
+    <li>Your Discord user ID and username, so staff know who filed a report or appeal and so the bot can message you the outcome.</li>
+  </ul>
+
+  <h3>Ban appeals</h3>
+  <ul>
+    <li>The Roblox username or user ID you enter and the statement you write in the appeal form.</li>
+    <li>Details of your ban, read from Roblox: the type of ban, its case ID and your account progression when the ban was issued.</li>
+    <li>The appeal's status, which staff member resolved it, when, and any note they added.</li>
+    <li>The messages in your appeal channel. When staff close the appeal, the bot reads that channel's history (text, attachments, embeds, author names and times) and builds an HTML transcript. The appeal channel tells you this when it opens.</li>
+  </ul>
+
+  <h3>Player reports</h3>
+  <ul>
+    <li>The Roblox username you report and the reason you give.</li>
+    <li>The evidence link and outcome that staff add when they resolve it.</li>
+  </ul>
+
+  <h3>Staff actions</h3>
+  <ul>
+    <li>When staff ban or unban a player: the Roblox user ID, the ban reasons and duration, and which staff member did it.</li>
+  </ul>
+
+  <h3>Technical logs</h3>
+  <ul>
+    <li>Error and status logs on the bot's server. These can contain Discord user IDs, channel IDs and Roblox usernames. Message content is not written to the logs.</li>
+  </ul>
+
+  <h2>2. How it is used</h2>
+  <ul>
+    <li>To review ban appeals and player reports.</li>
+    <li>To apply and lift Cold War game bans on Roblox.</li>
+    <li>To keep a moderation record, so staff decisions can be checked later.</li>
+    <li>To send you a direct message with the outcome of your appeal or report. If your DMs are closed, the bot skips it.</li>
+  </ul>
+
+  <h2>3. Where it is kept and who can see it</h2>
+  <ul>
+    <li><strong>Discord.</strong> Appeal and report channels are private to you and Cold War staff. When staff resolve one, a summary, plus the transcript for appeals, is posted to a channel only staff can see.</li>
+    <li><strong>Bot server.</strong> Appeal and report records and the technical logs are stored on a server hosted by Amazon Web Services (Lightsail) in Frankfurt, Germany. Transcripts are built in memory and uploaded straight to Discord. They are not saved on this server.</li>
+    <li><strong>Roblox.</strong> Bans and unbans are applied through Roblox Open Cloud, and the bot reads Roblox account and ban information from Roblox.</li>
+    <li><strong>Cloudflare.</strong> When a player is banned or unbanned through the bot, their Roblox user ID and username, the ban reason and the staff member's name are sent to an internal staff tool hosted on Cloudflare.</li>
+  </ul>
+  <p>Only Cold War staff with moderation roles and the people who maintain the bot can access this data. Discord's and Roblox's own privacy policies apply to data held on their platforms.</p>
+
+  <h2>4. How long it is kept</h2>
+  <ul>
+    <li>Appeal and report channels are deleted within 30 seconds of being resolved.</li>
+    <li>Summaries and transcripts in the staff channel are kept as the moderation record until staff delete them.</li>
+    <li>Appeal and report records on the bot server are kept as the moderation record. They are not deleted automatically.</li>
+    <li>Technical logs are kept on the bot server until they are cleared.</li>
+  </ul>
+
+  <h2>5. Your choices</h2>
+  <ul>
+    <li>Appeals and reports are voluntary. You can file an appeal with only the appeal form and post nothing else in the channel.</li>
+    <li>You can ask for a copy of the data the bot holds about you, or ask for it to be deleted, by contacting staff (see below). We will remove your appeal and report records, transcripts and log entries, except a record of an active ban that is still needed to enforce it.</li>
+  </ul>
+
+  <h2>6. Age</h2>
+  <p>Discord requires users to be at least 13, or older where local law says so. The bot does not ask for your age or for any information beyond what is listed above.</p>
+
+  <h2>7. Changes</h2>
+  <p>If this policy changes, the date at the top is updated. Significant changes are announced in the Cold War Discord server.</p>
+
+  <h2>8. Contact</h2>
+  <p>For questions or data requests, contact a staff member in the official Cold War Discord server.</p>
+</main>
+</body>
+</html>
