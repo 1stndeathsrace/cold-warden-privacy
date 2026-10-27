@@ -60,14 +60,14 @@
 <body>
 <main>
   <h1>Cold Warden Privacy Policy</h1>
-  <p class="meta">Effective 18 October 2026</p>
+  <p class="meta">Effective 25 October 2026</p>
 
   <p>Cold Warden is a Discord bot run by the staff of Cold War, a Roblox game. It works only in the official Cold War community Discord server, where staff use it to manage game bans, handle player reports and review ban appeals. This policy explains what the bot collects, why, where it is kept and who can see it.</p>
 
   <div class="summary">
     <ul>
-      <li>The bot reads message content in one place only: a ban appeal channel, at the moment staff close it, to save a transcript for staff.</li>
-      <li>It does not read messages in any other channel, track your online status or collect the server's member list.</li>
+      <li>The bot reads the content of people's messages in one place only: a ban appeal channel, at the moment staff close it, to save a transcript for staff.</li>
+      <li>When a report closes, it counts how many messages each staff member posted there, by author only, without looking at or keeping what anyone wrote. It reads no other messages, does not track your online status and does not collect the server's member list.</li>
       <li>Your data is never sold, never used for advertising and never used to train machine learning or AI models.</li>
     </ul>
   </div>
@@ -77,6 +77,7 @@
   <h3>When you use the bot</h3>
   <ul>
     <li>Your Discord user ID and username, so staff know who filed a report or appeal and so the bot can message you the outcome.</li>
+    <li>The language you pick when you open a report or appeal, so a staff member who speaks it can take it.</li>
   </ul>
 
   <h3>Ban appeals</h3>
@@ -96,6 +97,8 @@
   <h3>Staff actions</h3>
   <ul>
     <li>When staff ban or unban a player: the Roblox user ID, the ban reasons and duration, and which staff member did it.</li>
+    <li>For each closed appeal or report, how many messages each staff member posted in it. This is one number per staff member, with no message content, kept with the appeal or report record so staff can see who handles tickets.</li>
+    <li>Staff can look up one player's record: their current ban, their ban history from Roblox, the anti-cheat cases held by the staff tool on Cloudflare, and the reports and appeals that involve them. The result is shown only to the staff member who asked and is not stored.</li>
   </ul>
 
   <h3>Technical logs</h3>
@@ -114,9 +117,9 @@
   <h2>3. Where it is kept and who can see it</h2>
   <ul>
     <li><strong>Discord.</strong> Appeal and report channels are private to you and Cold War staff. When staff resolve one, a summary, plus the transcript for appeals, is posted to a channel only staff can see.</li>
-    <li><strong>Bot server.</strong> Appeal and report records and the technical logs are stored on a server hosted by Amazon Web Services (Lightsail) in Frankfurt, Germany. Transcripts are built in memory and uploaded straight to Discord. They are not saved on this server.</li>
-    <li><strong>Roblox.</strong> Bans and unbans are applied through Roblox Open Cloud, and the bot reads Roblox account and ban information from Roblox.</li>
-    <li><strong>Cloudflare.</strong> When a player is banned or unbanned through the bot, their Roblox user ID and username, the ban reason and the staff member's name are sent to an internal staff tool hosted on Cloudflare.</li>
+    <li><strong>Bot server.</strong> Appeal and report records, ticket languages and the technical logs are stored on a server hosted by Amazon Web Services (Lightsail) in Frankfurt, Germany. Transcripts are built in memory and uploaded straight to Discord. They are not saved on this server.</li>
+    <li><strong>Roblox.</strong> Bans and unbans are applied through Roblox Open Cloud, and the bot reads Roblox account information, current bans and ban history from Roblox.</li>
+    <li><strong>Cloudflare.</strong> When a player is banned or unbanned through the bot, their Roblox user ID and username, the ban reason and the staff member's name are sent to an internal staff tool hosted on Cloudflare. For a staff lookup, the bot reads that player's anti-cheat cases back from it.</li>
   </ul>
   <p>Only Cold War staff with moderation roles and the people who maintain the bot can access this data. Discord's and Roblox's own privacy policies apply to data held on their platforms.</p>
 
@@ -124,7 +127,7 @@
   <ul>
     <li>Appeal and report channels are deleted within 30 seconds of being resolved.</li>
     <li>Summaries and transcripts in the staff channel are kept as the moderation record until staff delete them.</li>
-    <li>Appeal and report records on the bot server are kept as the moderation record. They are not deleted automatically.</li>
+    <li>Appeal and report records on the bot server, including the staff message counts, are kept as the moderation record. They are not deleted automatically.</li>
     <li>Technical logs are kept on the bot server until they are cleared.</li>
   </ul>
 
